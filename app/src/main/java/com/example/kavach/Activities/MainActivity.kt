@@ -1,12 +1,12 @@
 package com.Activities
 
-import androidx.appcompat.app.AppCompatActivity
+import ProfileFragment
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.Fragments.ProfileFragment
-import com.example.kavach.R
+import com.Fragments.HomeFragment
 import com.Fragments.UpdatesFragment
-import com.Fragments.com.Fragments.HomeFragment
+import com.example.kavach.R
 import com.example.kavach.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference

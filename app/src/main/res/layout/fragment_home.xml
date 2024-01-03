@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment"
+    tools:context="com.Fragments.HomeFragment"
     android:background="@color/white">
 
     <androidx.appcompat.widget.Toolbar
@@ -18,7 +18,7 @@
     <ImageView
         android:id="@+id/ivtoolbar"
         android:layout_width="match_parent"
-        android:layout_height="61dp"
+        android:layout_height="53dp"
         android:layout_below="@id/toolbar"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"

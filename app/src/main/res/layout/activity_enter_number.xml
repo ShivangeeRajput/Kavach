@@ -67,7 +67,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/edt_phone"
+        android:id="@+id/edtPhone"
         android:layout_width="237dp"
         android:layout_height="57dp"
         android:layout_alignParentEnd="true"
