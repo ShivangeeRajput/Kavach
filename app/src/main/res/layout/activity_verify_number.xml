@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyNumber"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/wiv"
+        android:layout_width="410dp"
+        android:layout_height="360dp"
+        android:src="@drawable/ot" />
+
+    <TextView
+        android:id="@+id/tvlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wiv"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="343dp"
+        android:layout_marginEnd="62dp"
+        android:fontFamily="@font/nunitosans_black"
+        android:gravity="center"
+        android:text="OTP Verification"
+        android:textColor="@color/blue_grey"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/tvs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvlogin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="6dp"
+        android:fontFamily="@font/nunitosans_light"
+        android:gravity="center"
+        android:text="We have sent you an One Time Password on your Mobile Number"
+        android:textColor="@color/blue_grey"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_otp"
+        android:layout_width="351dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="208dp"
+        android:background="@drawable/edt_back"
+        android:hint=" OTP "
+        android:paddingLeft="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/btnv"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="130dp"
+        android:background="@drawable/edt_btn"
+        android:text="Verify"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

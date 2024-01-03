@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.OtpVerification.EnterNumber"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/wiv"
+        android:layout_width="410dp"
+        android:layout_height="360dp"
+        android:src="@drawable/otp" />
+
+
+
+
+    <TextView
+        android:id="@+id/tvlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wiv"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/nunitosans_black"
+        android:gravity="center"
+        android:text="SignUp"
+        android:textColor="@color/blue_grey"
+        android:textSize="45sp" />
+
+
+
+
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="160dp"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="173dp"
+        app:ccp_autoDetectCountry="true"
+        app:ccp_autoDetectLanguage="true"
+        app:ccp_countryAutoDetectionPref="SIM_ONLY"
+        app:ccp_defaultLanguage="ENGLISH"
+        app:ccp_rememberLastSelection="true"
+        app:ccp_showPhoneCode="true"
+        app:ccpDialog_backgroundColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wiv"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="82dp"
+        android:fontFamily="@font/nunitosans_light"
+        android:gravity="center"
+        android:text="Enter your number and verify with OTP"
+        android:textColor="@color/blue_grey"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_phone"
+        android:layout_width="237dp"
+        android:layout_height="57dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="175dp"
+        android:background="@drawable/edt_back"
+        android:hint=" Phone "
+        android:paddingLeft="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/btnnext"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="86dp"
+        android:text="Next"
+        android:background="@drawable/edt_btn"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
