@@ -1,59 +1,60 @@
 package com.Fragments
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-//import com.example.kavach.ARG_PARAM1
-//import com.example.kavach.ARG_PARAM2
-import com.example.kavach.R
+import com.example.kavach.databinding.FragmentUpdatesBinding
 
-/**
- * A simple [Fragment] subclass.
- * Use the [UpdatesFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class UpdatesFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-
-        arguments?.let {
-//            param1 = it.getString(ARG_PARAM1)
-//            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    private var _binding: FragmentUpdatesBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_updates, container, false)
+        _binding = FragmentUpdatesBinding.inflate(inflater, container, false)
+        val view = binding.root
+        return view
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment UpdatesFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            UpdatesFragment().apply {
-                arguments = Bundle().apply {
-//                    putString(ARG_PARAM1, param1)
-//                    putString(ARG_PARAM2, param2)
-                }
-            }
+    // Handling the cardview click
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.cvhelp.setOnClickListener {
+            openUrl("https://www.ncwwomenhelpline.in/")
+        }
+        binding.cvlaw.setOnClickListener {
+            openUrl("http://ncw.nic.in/important-links/List-of-Laws-Related-to-Women")
+        }
+        binding.cvwsafety.setOnClickListener {
+            openUrl("https://pib.gov.in/Pressreleaseshare.aspx?PRID=1575574")
+        }
+        binding.cvselfDefence.setOnClickListener {
+            openUrl("https://www.healthline.com/health/womens-health/self-defense-tips-escape")
+        }
+        binding.cvnews.setOnClickListener {
+            openUrl("https://www.healthline.com/health/womens-health/self-defense-tips-escape")
+        }
+        binding.cvanon.setOnClickListener {
+            openUrl("https://hood.live/ ")
+        }
+    }
+
+    private fun openUrl(link: String) {
+        val uri = Uri.parse(link)
+        val intent = Intent(Intent.ACTION_VIEW, uri)
+        startActivity(intent)
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
