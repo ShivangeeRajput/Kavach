@@ -54,7 +54,7 @@
         android:layout_marginTop="132dp"
         android:background="@color/white"
         android:columnCount="2"
-        android:rowCount="3">
+        android:rowCount="4">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cvhelp"
@@ -94,7 +94,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cvfakecall"
+            android:id="@+id/cvlaw"
             app:cardBackgroundColor="@color/white"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -107,20 +107,20 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/ivfake"
+                    android:id="@+id/ivlaw"
                     android:layout_width="98dp"
                     android:layout_height="104dp"
                     android:layout_centerInParent="true"
-                    android:src="@drawable/call" />
+                    android:src="@drawable/law" />
 
                 <TextView
-                    android:id="@+id/tvfake"
-                    android:layout_width="87dp"
-                    android:layout_height="50dp"
-                    android:layout_below="@id/ivfake"
+                    android:id="@+id/tvlaw"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivlaw"
                     android:layout_centerInParent="true"
-                    android:layout_marginTop="2dp"
-                    android:text="Fake Call"
+                    android:layout_marginTop="4dp"
+                    android:text="Women Laws"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -130,7 +130,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cvsos"
+            android:id="@+id/cvwsafety"
             app:cardBackgroundColor="@color/white"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -143,20 +143,20 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/ivsos"
+                    android:id="@+id/ivwsafety"
                     android:layout_width="98dp"
                     android:layout_height="97dp"
                     android:layout_centerInParent="true"
-                    android:src="@drawable/sos" />
+                    android:src="@drawable/wsafety" />
 
                 <TextView
-                    android:id="@+id/tvAslFlash"
+                    android:id="@+id/tvwsafety"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/ivsos"
+                    android:layout_below="@id/ivwsafety"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="5dp"
-                    android:text="SOS"
+                    android:text="Women Safety"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -273,6 +273,9 @@
 
 
         </androidx.cardview.widget.CardView>
+
+
+
 
 
 

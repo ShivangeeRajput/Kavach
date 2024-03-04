@@ -26,11 +26,11 @@
         android:layout_centerInParent="true"
         android:layout_marginBottom="91dp"
         android:fontFamily="@font/nunitosans_black"
-        android:text="𝖪𝖠𝖵𝖠𝖢𝖧"
+        android:text="NIRBHAYA"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="40sp"
-        android:textStyle="bold" />
+        android:textSize="40sp" />
+<!--        android:textStyle="bold" />-->
 
     <TextView
         android:id="@+id/tvsl"

@@ -63,7 +63,7 @@
             android:layout_margin="5dp"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="15dp"
-            app:cardElevation="0dp">
+            app:cardElevation="4dp">
 
             <ImageView
                 android:id="@+id/ivwomen"
