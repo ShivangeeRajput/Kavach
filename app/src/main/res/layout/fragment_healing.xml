@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.HealingFragment"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="423dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="1dp"
+            android:background="#6495ED">
+
+            <ImageView
+                android:id="@+id/ivtoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kavach" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="454dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="173dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/spinner" />
+
+        <TextView
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="396dp"
+            android:layout_marginEnd="138dp"
+            android:layout_marginBottom="-32dp"
+            android:text="Self Love♡"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:id="@+id/border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="125dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/border" />
+
+        <Button
+            android:id="@+id/spinWheel"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/spinner"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="343dp"
+            android:layout_marginEnd="105dp"
+            android:layout_marginBottom="-70dp"
+            android:background="@drawable/edt_btn"
+            android:fontFamily="@font/nunitosans_light"
+            android:gravity="center"
+            android:text="𝗦𝗽𝗶𝗻"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="82dp"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/nunitosans_light"
+            android:gravity="center"
+            android:text="Spin daily, self-love's way! "
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

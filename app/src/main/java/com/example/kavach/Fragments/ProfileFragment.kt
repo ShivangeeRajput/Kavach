@@ -32,7 +32,7 @@ class ProfileFragment : Fragment() {
 
     private fun navigateToAddFragment() {
         // Navigate to AddFragment
-        findNavController().navigate(R.id.action_profileFragment_to_addFragment)
+        findNavController().navigate(R.id.action_listFragment_to_addFragment)
     }
 
     override fun onDestroyView() {

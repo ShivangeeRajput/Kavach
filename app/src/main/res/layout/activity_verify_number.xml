@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VerifyNumber"
+    tools:context="com.OtpVerification.VerifyNumber"
     android:background="@color/white">
 
     <ImageView
@@ -31,44 +31,59 @@
         android:textColor="@color/blue_grey"
         android:textSize="35sp" />
 
-    <TextView
-        android:id="@+id/tvs"
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_authenticate_num"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvlogin"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="6dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/nunitosans_light"
-        android:gravity="center"
-        android:text="We have sent you an One Time Password on your Mobile Number"
+        android:text="Authenticate Number"
         android:textColor="@color/blue_grey"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
-    <EditText
-        android:id="@+id/edt_otp"
-        android:layout_width="351dp"
-        android:layout_height="48dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginBottom="208dp"
-        android:background="@drawable/edt_back"
-        android:hint=" OTP "
-        android:paddingLeft="13dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/text_authenticate_num"
+        android:focusableInTouchMode="true"
+        android:focusedByDefault="false"
+        android:hint="OTP"
+        android:textColorHint="@color/blue_grey"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/text_authenticate_num">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edt_back"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:maxLength="10"
+            android:singleLine="true"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <Button
-        android:id="@+id/btnv"
+        android:id="@+id/btn_verify"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"

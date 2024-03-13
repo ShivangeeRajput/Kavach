@@ -4,7 +4,8 @@
     package="com.example.kavach">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="com.example.permission.ACCESS_OTHER_APP" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="com.example.permission.ACCESS_OTHER_APP"/>
 
     <application
         android:allowBackup="true"
@@ -23,9 +24,7 @@
         <activity
             android:name="com.OtpVerification.EnterNumber"
             android:exported="false" />
-        <activity
-            android:name="com.Onboarding.SignUp"
-            android:exported="false" />
+
         <activity
             android:name="com.Onboarding.Welcome_Screen"
             android:exported="false" />
@@ -39,8 +38,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.Activities.MainActivity"
-            android:exported="true" />
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

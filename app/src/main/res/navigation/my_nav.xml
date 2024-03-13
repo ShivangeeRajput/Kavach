@@ -3,17 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/ProfileFragment">
+    app:startDestination="@id/ListFragment">
 
     <fragment
-        android:id="@+id/ProfileFragment"
-        android:name="com.example.kavach.Fragments.ProfileFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" >
+        android:id="@+id/ListFragment"
+        android:name="com.example.kavach.Fragments.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
 
         <!-- Action to navigate from ProfileFragment to AddFragment -->
         <action
-            android:id="@+id/action_profileFragment_to_addFragment"
+            android:id="@+id/action_listFragment_to_addFragment"
             app:destination="@id/addFragment" />
 
     </fragment>
@@ -26,8 +26,8 @@
 
         <!-- Action to navigate from AddFragment to ProfileFragment -->
         <action
-            android:id="@+id/action_addFragment_to_profileFragment"
-            app:destination="@id/ProfileFragment"/>
+            android:id="@+id/action_addFragment_to_listFragment"
+            app:destination="@id/ListFragment"/>
 
     </fragment>
 </navigation>
