@@ -26,6 +26,8 @@
 
 <p>
 
+
+
 ## Built With 🛠
   
 - [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.
@@ -37,3 +39,5 @@
 - [Glide](https://github.com/bumptech/glide) - An image loading library for Android
 - [Material Components for Android](https://github.com/material-components/material-components-android) - Material Components are a set of UI components that helps you build Android apps with Material Design
 - [Lottie Animation](https://github.com/airbnb/lottie-android) - Mobile library for Android and iOS that parses Adobe After Effects animations exported as json with Bodymovin and renders them natively on mobile!
+
+## Currently working on additional features...
