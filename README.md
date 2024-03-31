@@ -1,4 +1,4 @@
-# KAVACH
+# Introducing KAVACH - Your trusted safety companion, providing instant access to emergency assistance and anxiety relief in one intuitive app.
 ## App Features
 
 - **User Authentication** -  Users can login and register through OTP Verification.
