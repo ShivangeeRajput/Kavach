@@ -1,32 +1,60 @@
 package com.Fragments
 
-import android.content.ComponentName
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.example.kavach.R
+import com.example.kavach.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
+
+    private var _binding: FragmentHomeBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        val view = binding.root
+        return view
     }
 
+    // Handling the cardview click
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Assume the user has just signed in and you want to open another app
-//        openAnotherApp("com.shubham.womensafety")
-
+        binding.cvhelp.setOnClickListener {
+            openUrl("https://www.ncwwomenhelpline.in/")
+        }
+        binding.cvlaw.setOnClickListener {
+            openUrl("http://ncw.nic.in/important-links/List-of-Laws-Related-to-Women")
+        }
+        binding.cvwsafety.setOnClickListener {
+            openUrl("https://pib.gov.in/Pressreleaseshare.aspx?PRID=1575574")
+        }
+        binding.cvselfDefence.setOnClickListener {
+            openUrl("https://www.healthline.com/health/womens-health/self-defense-tips-escape")
+        }
+        binding.cvnews.setOnClickListener {
+            openUrl("https://www.healthline.com/health/womens-health/self-defense-tips-escape")
+        }
+        binding.cvanon.setOnClickListener {
+            openUrl("https://hood.live/ ")
+        }
     }
 
+    private fun openUrl(link: String) {
+        val uri = Uri.parse(link)
+        val intent = Intent(Intent.ACTION_VIEW, uri)
+        startActivity(intent)
+    }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }

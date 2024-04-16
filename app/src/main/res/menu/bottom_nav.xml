@@ -6,18 +6,20 @@
         android:icon="@drawable/home24"
         />
     <item
-        android:id="@+id/updates"
-        android:title="Updates"
-        android:icon="@drawable/update"
+        android:id="@+id/emergency"
+        android:title="Emergency"
+        android:icon="@drawable/emergency"
         />
     <item
-        android:id="@+id/maps"
-        android:title="Maps"
-        android:icon="@drawable/baseline_location"
+        android:id="@+id/selflove"
+        android:title="Healing"
+        android:icon="@drawable/healing"
         />
     <item
         android:id="@+id/profile"
         android:title="Profile"
         android:icon="@drawable/account"
         />
+
+
 </menu>

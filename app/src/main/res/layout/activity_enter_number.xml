@@ -14,9 +14,6 @@
         android:layout_height="360dp"
         android:src="@drawable/otp" />
 
-
-
-
     <TextView
         android:id="@+id/tvlogin"
         android:layout_width="wrap_content"
@@ -31,25 +28,54 @@
         android:textColor="@color/blue_grey"
         android:textSize="45sp" />
 
+    <LinearLayout
+        android:id="@+id/ll_phone_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvs">
 
 
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:padding="10dp"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_autoDetectLanguage="true"
+            app:ccp_countryAutoDetectionPref="SIM_ONLY"
+            app:ccp_defaultLanguage="ENGLISH"
+            app:ccp_rememberLastSelection="true"
+            app:ccp_showPhoneCode="true" />
 
 
-    <com.hbb20.CountryCodePicker
-        android:id="@+id/ccp"
-        android:layout_width="160dp"
-        android:layout_height="57dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginBottom="173dp"
-        app:ccp_autoDetectCountry="true"
-        app:ccp_autoDetectLanguage="true"
-        app:ccp_countryAutoDetectionPref="SIM_ONLY"
-        app:ccp_defaultLanguage="ENGLISH"
-        app:ccp_rememberLastSelection="true"
-        app:ccp_showPhoneCode="true"
-        app:ccpDialog_backgroundColor="@color/white"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:focusedByDefault="false"
+            android:hint="Phone Number"
+            android:textColorHint="@color/blue_grey"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:inputType="phone|number"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:background="@drawable/edt_back"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tvs"
@@ -66,25 +92,10 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/edtPhone"
-        android:layout_width="237dp"
-        android:layout_height="57dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginBottom="175dp"
-        android:background="@drawable/edt_back"
-        android:hint=" Phone "
-        android:paddingLeft="13dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black" />
+
 
     <Button
-        android:id="@+id/btnnext"
+        android:id="@+id/btn_get_otp"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -96,6 +107,5 @@
         android:background="@drawable/edt_btn"
         android:textColor="@color/white"
         android:textSize="20sp" />
-
 
 </RelativeLayout>

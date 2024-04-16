@@ -12,7 +12,20 @@
           "package_name": "com.example.kavach"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "339531379978-mlmgtud4q09o5e8e5ofv7drki5m55e6q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kavach",
+            "certificate_hash": "6eba4de332aaf706a57b72b7c13365782575c132"
+          }
+        },
+        {
+          "client_id": "339531379978-0c6l8jnpqsvokapl6q8g6p4vsqef59fp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAHDwjbwgkG7YzBixo1ynYUzok0VeKOXto"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "339531379978-0c6l8jnpqsvokapl6q8g6p4vsqef59fp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
