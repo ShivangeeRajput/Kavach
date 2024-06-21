@@ -7,7 +7,7 @@
 - **Helpline Access** - Kavach provides quick access to helpline numbers for various emergency services, such as police, ambulance, and women's helpline.
 - **Anxiety Control Techniques** - Users can access anxiety control techniques and resources within the app to manage stress and anxiety effectively.
 - **Safety Tips and Alerts** - The app offers safety tips and alerts to users based on their location and potential risks in their surroundings.
-- 
+
 ## Video Walkthrough
 Here's a walkthrough of implemented user stories:
 <p>
