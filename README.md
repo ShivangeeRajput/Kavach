@@ -7,6 +7,7 @@
 - **Helpline Access** - Kavach provides quick access to helpline numbers for various emergency services, such as police, ambulance, and women's helpline.
 - **Anxiety Control Techniques** - Users can access anxiety control techniques and resources within the app to manage stress and anxiety effectively.
 - **Safety Tips and Alerts** - The app offers safety tips and alerts to users based on their location and potential risks in their surroundings.
+- **Daily Notification** - Send positive thoughts or jokes to brighten up the user's day
 
 ## Video Walkthrough
 Here's a walkthrough of implemented user stories:
@@ -48,6 +49,7 @@ Here's a walkthrough of implemented user stories:
   - [ViewBinding](https://developer.android.com/topic/libraries/view-binding) - Generates a binding class for each XML layout file present in that module and allows you to more easily write code that interacts with views.
 - [Navigation Component](https://developer.android.com/guide/navigation) - Allows to specify navigation throughout app using an XML graph or via a graph editor.
 - [Glide](https://github.com/bumptech/glide) - An image loading library for Android
+- [Push Notifications](https://firebase.google.com/docs/cloud-messaging)- You can send notification messages to drive user re-engagement and retention.
 - [Material Components for Android](https://github.com/material-components/material-components-android) - Material Components are a set of UI components that helps you build Android apps with Material Design
 - [Lottie Animation](https://github.com/airbnb/lottie-android) - Mobile library for Android and iOS that parses Adobe After Effects animations exported as json with Bodymovin and renders them natively on mobile!
 ## Currently working on additional features...
