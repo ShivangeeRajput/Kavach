@@ -52,4 +52,4 @@ Here's a walkthrough of implemented user stories:
 - [Push Notifications](https://firebase.google.com/docs/cloud-messaging)- You can send notification messages to drive user re-engagement and retention.
 - [Material Components for Android](https://github.com/material-components/material-components-android) - Material Components are a set of UI components that helps you build Android apps with Material Design
 - [Lottie Animation](https://github.com/airbnb/lottie-android) - Mobile library for Android and iOS that parses Adobe After Effects animations exported as json with Bodymovin and renders them natively on mobile!
-## Currently working on additional features...
+
