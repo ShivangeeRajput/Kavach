@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun openAnotherApp() {
         val intent = Intent(Intent.ACTION_MAIN)
-        intent.component = ComponentName("com.shubham.womensafety", "com.shubham.womensafety.MainActivity")
+        intent.component = ComponentName("com.example.womensafety", "com.example.womensafety.MainActivity")
         startActivity(intent)
 
     }
