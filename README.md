@@ -33,6 +33,9 @@ Here's a walkthrough of implemented user stories:
 <img src="https://github.com/ShivangeeRajput/Kavach/assets/100294737/84d47808-fd00-4b4f-8f3c-5165c4a402d2.jpg" height="500">
 <img src="https://github.com/ShivangeeRajput/Kavach/assets/100294737/dd4f440d-a0a2-4368-8191-ed00f299c690.jpg" height="500">
 
+<img src="https://github.com/user-attachments/assets/c792608b-e36b-47f0-9cbd-52228a0ab3d3.jpg" height="500">
+<img src="https://github.com/user-attachments/assets/2575d568-9311-4bb7-9e8d-a0478e5a43a4.jpg" height="500">
+
 
 
 
