@@ -37,9 +37,6 @@ Here's a walkthrough of implemented user stories:
 
 
 
-
-
-
 <p>
 
 
