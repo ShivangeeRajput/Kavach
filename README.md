@@ -1,4 +1,4 @@
-# Introducing KAVACH - Your trusted safety companion, providing instant access to emergency assistance and anxiety relief in one intuitive app.
+# Introducing KAVACH - A Women Safety Application
 ## App Features
 
 - **User Authentication** -  Users can login and register through OTP Verification.
@@ -7,7 +7,7 @@
 - **Helpline Access** - Kavach provides quick access to helpline numbers for various emergency services, such as police, ambulance, and women's helpline.
 - **Anxiety Control Techniques** - Users can access anxiety control techniques and resources within the app to manage stress and anxiety effectively.
 - **Safety Tips and Alerts** - The app offers safety tips and alerts to users based on their location and potential risks in their surroundings.
-- **Daily Notification** - Sending positive thoughts or jokes to brighten up the user's day using FCM.
+- **Daily Notification** - Sending positive thoughts or jokes to brighten up the user's day using FCM (Firebase Cloud Messaging).
 
 ## Video Walkthrough
 Here's a walkthrough of implemented user stories:
