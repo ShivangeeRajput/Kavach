@@ -11,6 +11,7 @@
 
 ## Video Walkthrough
 Here's a walkthrough of implemented user stories:
+
 <p>
 <img src="https://github.com/ShivangeeRajput/Kavach/assets/100294737/a5f63041-75da-43a4-adf1-94ef9b766d65.gif" height="500">
 </p>
@@ -44,7 +45,8 @@ Here's a walkthrough of implemented user stories:
 - [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.
 - [Android Architecture Components](https://developer.android.com/topic/libraries/architecture) - Collection of libraries that help you design robust, testable, and maintainable apps.
 - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - Stores UI-related data that isn't destroyed on UI changes.
-  - [ViewBinding](https://developer.android.com/topic/libraries/view-binding) - Generates a binding class for each XML layout file present in that module and allows you to more easily write code that interacts with views.
+  - [ViewBinding](https://developer.android.com/topic/libraries/view-binding) - Generates a binding class for each XML layout file present in that module and allows you to more easily write code that interacts 
+    with views.
 - [Glide](https://github.com/bumptech/glide) - An image loading library for Android
 - [Push Notifications](https://firebase.google.com/docs/cloud-messaging)- You can send notification messages to drive user re-engagement and retention.
 - [Material Components for Android](https://github.com/material-components/material-components-android) - Material Components are a set of UI components that helps you build Android apps with Material Design
