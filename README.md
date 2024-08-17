@@ -1,4 +1,4 @@
-# Introducing KAVACH - Your trusted safety companion, providing instant access to emergency assistance and anxiety relief in one intuitive app.
+# Introducing KAVACH - A Women Safety Application
 ## App Features
 
 - **User Authentication** -  Users can login and register through OTP Verification.
@@ -7,10 +7,11 @@
 - **Helpline Access** - Kavach provides quick access to helpline numbers for various emergency services, such as police, ambulance, and women's helpline.
 - **Anxiety Control Techniques** - Users can access anxiety control techniques and resources within the app to manage stress and anxiety effectively.
 - **Safety Tips and Alerts** - The app offers safety tips and alerts to users based on their location and potential risks in their surroundings.
-- **Daily Notification** - Send positive thoughts or jokes to brighten up the user's day
+- **Daily Notification** - Sending positive thoughts or jokes to brighten up the user's day using FCM (Firebase Cloud Messaging).
 
 ## Video Walkthrough
 Here's a walkthrough of implemented user stories:
+
 <p>
 <img src="https://github.com/ShivangeeRajput/Kavach/assets/100294737/a5f63041-75da-43a4-adf1-94ef9b766d65.gif" height="500">
 </p>
@@ -32,11 +33,8 @@ Here's a walkthrough of implemented user stories:
 <img src="https://github.com/ShivangeeRajput/Kavach/assets/100294737/edccb41a-e486-410c-8b2b-636489291e8c.jpg" height="500">
 <img src="https://github.com/ShivangeeRajput/Kavach/assets/100294737/84d47808-fd00-4b4f-8f3c-5165c4a402d2.jpg" height="500">
 <img src="https://github.com/ShivangeeRajput/Kavach/assets/100294737/dd4f440d-a0a2-4368-8191-ed00f299c690.jpg" height="500">
-
-
-
-
-
+<img src="https://github.com/user-attachments/assets/497e0c77-bf10-4162-83e9-1c7ab7e408cf" height="500">
+<img src="https://github.com/user-attachments/assets/8736f745-e9b8-4c83-bd54-7466f52959cf" height="500">
 
 <p>
 
@@ -46,8 +44,9 @@ Here's a walkthrough of implemented user stories:
   
 - [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.
 - [Android Architecture Components](https://developer.android.com/topic/libraries/architecture) - Collection of libraries that help you design robust, testable, and maintainable apps.
-  - [ViewBinding](https://developer.android.com/topic/libraries/view-binding) - Generates a binding class for each XML layout file present in that module and allows you to more easily write code that interacts with views.
-- [Navigation Component](https://developer.android.com/guide/navigation) - Allows to specify navigation throughout app using an XML graph or via a graph editor.
+- [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - Stores UI-related data that isn't destroyed on UI changes.
+  - [ViewBinding](https://developer.android.com/topic/libraries/view-binding) - Generates a binding class for each XML layout file present in that module and allows you to more easily write code that interacts 
+    with views.
 - [Glide](https://github.com/bumptech/glide) - An image loading library for Android
 - [Push Notifications](https://firebase.google.com/docs/cloud-messaging)- You can send notification messages to drive user re-engagement and retention.
 - [Material Components for Android](https://github.com/material-components/material-components-android) - Material Components are a set of UI components that helps you build Android apps with Material Design
