@@ -1,6 +1,6 @@
-package com.example.api
+package com.example.kavach.api
 
-import com.example.models.User
+import com.example.kavach.models.User
 import com.google.android.gms.common.api.Response
 
 interface ApiService {

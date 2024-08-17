@@ -1,7 +1,7 @@
 package com.example.kavach.repository
 
 import com.Data.User
-import com.example.api.ApiService
+import com.example.kavach.api.ApiService
 import javax.inject.Inject
 
 interface UserRepository {

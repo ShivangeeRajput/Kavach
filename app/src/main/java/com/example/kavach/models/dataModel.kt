@@ -1,4 +1,4 @@
-package com.example.models
+package com.example.kavach.models
 
 data class User(
     val id: String,
