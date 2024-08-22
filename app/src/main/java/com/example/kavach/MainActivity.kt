@@ -6,19 +6,24 @@ import android.content.ComponentName
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import com.Fragments.HomeFragment
 import com.Fragments.EmergencyFragment
 import com.example.kavach.databinding.ActivityMainBinding
+import com.example.kavach.models.ThoughtViewModel
 
 import com.google.android.material.navigation.NavigationBarView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import kotlinx.coroutines.NonCancellable.message
 
 class MainActivity : AppCompatActivity() {
-
+    private lateinit var viewModel: ThoughtViewModel
     private lateinit var mAuth: FirebaseAuth
     private lateinit var mDbRef: DatabaseReference
     private lateinit var binding: ActivityMainBinding
@@ -30,6 +35,14 @@ class MainActivity : AppCompatActivity() {
         mDbRef = FirebaseDatabase.getInstance().getReference()
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        viewModel=ViewModelProvider(this).get(ThoughtViewModel::class.java)
+        viewModel.getThoughtOfTheDay().observe(this, Observer {
+            val(title,message)=it
+        })
+        findViewById<TextView>(R.id.title).text = title
+        findViewById<TextView>(R.id.message).text = message
+
 
         if (savedInstanceState == null) {
             supportActionBar?.hide()

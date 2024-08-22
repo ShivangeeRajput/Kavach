@@ -11,6 +11,7 @@ import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat.getSystemService
 import com.example.kavach.MainActivity
 import com.example.kavach.R
+import com.example.kavach.repository.ThoughtRepository
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
 
@@ -19,12 +20,16 @@ const val channelName="com.example.cupid"
 class MyFirebaseMessagingService: FirebaseMessagingService() {
 
     override fun onMessageReceived(remoteMessage: RemoteMessage) {
+        if (remoteMessage.notification != null) {
+            val title = remoteMessage.notification!!.title ?: "Thought of the Day"
+            val message = remoteMessage.notification!!.body ?: "Brighten your day!"
 
-        if(remoteMessage.getNotification() != null){
-            generateNotification(remoteMessage.notification!!.title!!,remoteMessage.notification!!.body!!)
+            // Update LiveData
+            ThoughtRepository.updateThought(title, message)
 
+            // Generate Notification
+            generateNotification(title, message)
         }
-
     }
     //attaching notification with customview
     fun getRemoteView(title: String,message: String) : RemoteViews{
