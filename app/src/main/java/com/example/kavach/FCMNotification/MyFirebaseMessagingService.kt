@@ -23,11 +23,7 @@ class MyFirebaseMessagingService: FirebaseMessagingService() {
         if (remoteMessage.notification != null) {
             val title = remoteMessage.notification!!.title ?: "Thought of the Day"
             val message = remoteMessage.notification!!.body ?: "Brighten your day!"
-
-            // Update LiveData
             ThoughtRepository.updateThought(title, message)
-
-            // Generate Notification
             generateNotification(title, message)
         }
     }
