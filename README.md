@@ -7,7 +7,7 @@
 - **Helpline Access** - Kavach provides quick access to helpline numbers for various emergency services, such as police, ambulance, and women's helpline.
 - **Anxiety Control Techniques** - Users can access anxiety control techniques and resources within the app to manage stress and anxiety effectively.
 - **Safety Tips and Alerts** - The app offers safety tips and alerts to users based on their location and potential risks in their surroundings.
-- **Daily Notification** - Sending positive thoughts or jokes to brighten up the user's day using FCM (Firebase Cloud Messaging).
+- **Daily Notification** - Sending positive thoughts or jokes to brighten up the user's day using FCM (Firebase Cloud Messaging) & LiveData enabling seamless real-time updates within the app's UI.
 
 ## Video Walkthrough
 Here's a walkthrough of implemented user stories:
@@ -47,6 +47,7 @@ Here's a walkthrough of implemented user stories:
 - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - Stores UI-related data that isn't destroyed on UI changes.
   - [ViewBinding](https://developer.android.com/topic/libraries/view-binding) - Generates a binding class for each XML layout file present in that module and allows you to more easily write code that interacts 
     with views.
+  - [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) - LiveData is an observable data holder class. Unlike a regular observable, LiveData is lifecycle-aware, meaning it respects the lifecycle of other app components, such as activities, fragments, or services.
 - [Glide](https://github.com/bumptech/glide) - An image loading library for Android
 - [Push Notifications](https://firebase.google.com/docs/cloud-messaging)- You can send notification messages to drive user re-engagement and retention.
 - [Material Components for Android](https://github.com/material-components/material-components-android) - Material Components are a set of UI components that helps you build Android apps with Material Design
