@@ -19,9 +19,5 @@ class NetworkModule {
             .baseUrl("")
             .build()
     }
-//    @Singleton
-//    @Provides
-//    fun providesAuthAPI(retrofit: Retrofit): UserAPI {
-//        return retrofit.create(UserAPI::class.java)
-//    }
+
 }
